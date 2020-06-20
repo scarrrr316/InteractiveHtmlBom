@@ -40,23 +40,23 @@ class EasyEdaParser(EcadParser):
     def _verify(self, pcb):
         """Spot check the pcb object."""
         if 'head' not in pcb:
-            self.logger.error('No head attribute.')
+            self.logger.error(_('No head attribute.'))
             return False
         head = pcb['head']
         if len(head) < 2:
-            self.logger.error('Incorrect head attribute ' + pcb['head'])
+            self.logger.error(_('Incorrect head attribute ') + pcb['head'])
             return False
         if head['docType'] != '3':
-            self.logger.error('Incorrect document type: ' + head['docType'])
+            self.logger.error(_('Incorrect document type: ') + head['docType'])
             return False
         if 'canvas' not in pcb:
-            self.logger.error('No canvas attribute.')
+            self.logger.error(_('No canvas attribute.'))
             return False
         canvas = self.tilda_split(pcb['canvas'])
         if len(canvas) < 18:
-            self.logger.error('Incorrect canvas attribute ' + pcb['canvas'])
+            self.logger.error(_('Incorrect canvas attribute ') + pcb['canvas'])
             return False
-        self.logger.info('EasyEDA editor version ' + head['editorVersion'])
+        self.logger.info(_('EasyEDA editor version ') + head['editorVersion'])
         return True
 
     @staticmethod

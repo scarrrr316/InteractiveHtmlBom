@@ -13,9 +13,9 @@ def _get_git_version():
                 cwd=plugin_path)
         return git_version.decode('utf-8') if isinstance(git_version, bytes) else git_version
     except subprocess.CalledProcessError as e:
-        print('Git version check failed: ' + str(e))
+        print(_('Git version check failed: ') + str(e))
     except Exception as e:
-        print('Git process cannot be launched: ' + str(e))
+        print(_('Git process cannot be launched: ') + str(e))
     return None
 
 

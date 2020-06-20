@@ -48,7 +48,7 @@ class PcbnewParser(EcadParser):
             pcbnew.S_CURVE: "curve",
         }.get(d.GetShape(), "")
         if shape == "":
-            self.logger.info("Unsupported shape %s, skipping", d.GetShape())
+            self.logger.info(_("Unsupported shape %s, skipping"), d.GetShape())
             return None
         start = self.normalize(d.GetStart())
         end = self.normalize(d.GetEnd())
@@ -84,7 +84,7 @@ class PcbnewParser(EcadParser):
             if hasattr(d, "GetPolyShape"):
                 polygons = self.parse_poly_set(d.GetPolyShape())
             else:
-                self.logger.info("Polygons not supported for KiCad 4, skipping")
+                self.logger.info(_("Polygons not supported for KiCad 4, skipping"))
                 return None
             angle = 0
             if d.GetParentModule() is not None:
@@ -110,8 +110,8 @@ class PcbnewParser(EcadParser):
         for polygon_index in range(polygon_set.OutlineCount()):
             outline = polygon_set.Outline(polygon_index)
             if not hasattr(outline, "PointCount"):
-                self.logger.warn("No PointCount method on outline object. "
-                                 "Unpatched kicad version?")
+                self.logger.warn(_("No PointCount method on outline object. ")
+                                 _("Unpatched kicad version?"))
                 return result
             parsed_outline = []
             for point_index in range(outline.PointCount()):
@@ -266,10 +266,10 @@ class PcbnewParser(EcadParser):
         if shape == "custom":
             polygon_set = pad.GetCustomShapeAsPolygon()
             if polygon_set.HasHoles():
-                self.logger.warn('Detected holes in custom pad polygons')
+                self.logger.warn(_('Detected holes in custom pad polygons'))
             if polygon_set.IsSelfIntersecting():
                 self.logger.warn(
-                    'Detected self intersecting polygons in custom pad')
+                    _('Detected self intersecting polygons in custom pad'))
             pad_dict["polygons"] = self.parse_poly_set(polygon_set)
         if shape in ["roundrect", "chamfrect"]:
             pad_dict["radius"] = pad.GetRoundRectCornerRadius() * 1e-6
@@ -452,9 +452,9 @@ class PcbnewParser(EcadParser):
             title = os.path.splitext(pcb_file_name)[0]
         edges, bbox = self.parse_edges(self.board)
         if bbox is None:
-            self.logger.error('Please draw pcb outline on the edges '
-                              'layer on sheet or any module before '
-                              'generating BOM.')
+            self.logger.error(_('Please draw pcb outline on the edges ')
+                              _('layer on sheet or any module before ')
+                              _('generating BOM.'))
             return None, None
         bbox = {
             "minx": bbox.GetPosition().x * 1e-6,
@@ -488,7 +488,7 @@ class PcbnewParser(EcadParser):
             if hasattr(self.board, "Zones"):
                 pcbdata["zones"] = self.parse_zones(self.board.Zones())
             else:
-                self.logger.info("Zones not supported for KiCad 4, skipping")
+                self.logger.info(_("Zones not supported for KiCad 4, skipping"))
                 pcbdata["zones"] = {'F': [], 'B': []}
         if self.config.include_nets and hasattr(self.board, "GetNetInfo"):
             pcbdata["nets"] = self.parse_netlist(self.board.GetNetInfo())
@@ -501,14 +501,14 @@ class InteractiveHtmlBomPlugin(pcbnew.ActionPlugin, object):
 
     def __init__(self):
         super(InteractiveHtmlBomPlugin, self).__init__()
-        self.name = "Generate Interactive HTML BOM"
+        self.name = _("Generate Interactive HTML BOM")
         self.category = "Read PCB"
         self.pcbnew_icon_support = hasattr(self, "show_toolbar_button")
         self.show_toolbar_button = True
         icon_dir = os.path.dirname(os.path.dirname(__file__))
-        self.icon_file_name = os.path.join(icon_dir, 'icon.png')
-        self.description = "Generate interactive HTML page that contains BOM " \
-                           "table and pcb drawing."
+        self.icon_file_name = os.path.join(icon_dir,_( 'icon.png'))
+        self.description = _("Generate interactive HTML page that contains BOM ") \
+                           _("table and pcb drawing.")
 
     def defaults(self):
         pass
@@ -522,7 +522,7 @@ class InteractiveHtmlBomPlugin(pcbnew.ActionPlugin, object):
 
         logger = ibom.Logger()
         if not pcb_file_name:
-            logger.error('Please save the board file before generating BOM.')
+            logger.error(_('Please save the board file before generating BOM.'))
             return
 
         parser = PcbnewParser(pcb_file_name, config, logger, board)

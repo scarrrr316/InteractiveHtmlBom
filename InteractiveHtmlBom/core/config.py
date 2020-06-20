@@ -11,30 +11,30 @@ from .. import dialog
 
 class Config:
     FILE_NAME_FORMAT_HINT = (
-        'Output file name format supports substitutions:\n'
-        '\n'
-        '    %f : original pcb file name without extension.\n'
-        '    %p : pcb/project title from pcb metadata.\n'
-        '    %c : company from pcb metadata.\n'
-        '    %r : revision from pcb metadata.\n'
-        '    %d : pcb date from metadata if available, '
-        'file modification date otherwise.\n'
-        '    %D : bom generation date.\n'
-        '    %T : bom generation time.\n'
-        '\n'
-        'Extension .html will be added automatically.'
+        _('Output file name format supports substitutions:\n')
+        _('\n')
+        _('    %f : original pcb file name without extension.\n')
+        _('    %p : pcb/project title from pcb metadata.\n')
+        _('    %c : company from pcb metadata.\n')
+        _('    %r : revision from pcb metadata.\n')
+        _('    %d : pcb date from metadata if available, ')
+        _('file modification date otherwise.\n')
+        _('    %D : bom generation date.\n')
+        _('    %T : bom generation time.\n')
+        _('\n')
+        _('Extension .html will be added automatically.')
     )  # type: str
 
     # Helper constants
     config_file = os.path.join(os.path.dirname(__file__), '..', 'config.ini')
-    bom_view_choices = ['bom-only', 'left-right', 'top-bottom']
-    layer_view_choices = ['F', 'FB', 'B']
+    bom_view_choices = [_('bom-only'), _('left-right'), _('top-bottom')]
+    layer_view_choices = [_('F'), _('FB'), _('B')]
     default_sort_order = [
         'C', 'R', 'L', 'D', 'U', 'Y', 'X', 'F', 'SW', 'A',
         '~',
         'HS', 'CNN', 'J', 'P', 'NT', 'MH',
     ]
-    default_checkboxes = ['Sourced', 'Placed']
+    default_checkboxes = [_('Sourced'), _('Placed')]
     html_config_fields = [
         'dark_mode', 'show_pads', 'show_fabrication', 'show_silkscreen',
         'highlight_pin1', 'redraw_on_drag', 'board_rotation', 'checkboxes',

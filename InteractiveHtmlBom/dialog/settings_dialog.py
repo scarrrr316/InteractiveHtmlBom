@@ -8,7 +8,7 @@ from . import dialog_base
 
 
 def pop_error(msg):
-    wx.MessageBox(msg, 'Error', wx.OK | wx.ICON_ERROR)
+    wx.MessageBox(msg, _('Error'), wx.OK | wx.ICON_ERROR)
 
 
 class SettingsDialog(dialog_base.SettingsDialogBase):
@@ -21,7 +21,7 @@ class SettingsDialog(dialog_base.SettingsDialogBase):
         # hack for some gtk themes that incorrectly calculate best size
         best_size.IncBy(dx=0, dy=30)
         self.SetClientSize(best_size)
-        self.SetTitle('InteractiveHtmlBom %s' % version)
+        self.SetTitle(_('InteractiveHtmlBom %s') % version)
 
     # hack for new wxFormBuilder generating code incompatible with old wxPython
     # noinspection PyMethodOverriding
@@ -48,9 +48,9 @@ class SettingsDialogPanel(dialog_base.SettingsDialogPanel):
                                             file_name_format_hint)
         self.html = HtmlSettingsPanel(self.notebook)
         self.extra = ExtraFieldsPanel(self.notebook, extra_data_func)
-        self.notebook.AddPage(self.general, "General")
-        self.notebook.AddPage(self.html, "Html defaults")
-        self.notebook.AddPage(self.extra, "Extra fields")
+        self.notebook.AddPage(self.general, _("General"))
+        self.notebook.AddPage(self.html, _("Html defaults"))
+        self.notebook.AddPage(self.extra, _("Extra fields"))
 
     def OnExit(self, event):
         self.GetParent().EndModal(wx.ID_CANCEL)
@@ -103,8 +103,8 @@ class GeneralSettingsPanel(dialog_base.GeneralSettingsPanelBase):
 
     def OnComponentSortOrderAdd(self, event):
         item = wx.GetTextFromUser(
-                "Characters except for A-Z will be ignored.",
-                "Add sort order item")
+                _("Characters except for A-Z will be ignored."),
+                _("Add sort order item"))
         item = re.sub('[^A-Z]', '', item.upper())
         if item == '':
             return
@@ -121,7 +121,7 @@ class GeneralSettingsPanel(dialog_base.GeneralSettingsPanelBase):
         if selection != wx.NOT_FOUND:
             item = self.componentSortOrderBox.GetString(selection)
             if item == '~':
-                pop_error("You can not delete '~' item")
+                pop_error(_("You can not delete '~' item"))
                 return
             self.componentSortOrderBox.Delete(selection)
             if self.componentSortOrderBox.Count > 0:
@@ -129,8 +129,8 @@ class GeneralSettingsPanel(dialog_base.GeneralSettingsPanelBase):
 
     def OnComponentBlacklistAdd(self, event):
         item = wx.GetTextFromUser(
-                "Characters except for A-Z 0-9 and * will be ignored.",
-                "Add blacklist item")
+                _("Characters except for A-Z 0-9 and * will be ignored."),
+                _("Add blacklist item"))
         item = re.sub('[^A-Z0-9*]', '', item.upper())
         if item == '':
             return
@@ -150,7 +150,7 @@ class GeneralSettingsPanel(dialog_base.GeneralSettingsPanelBase):
                 self.blacklistBox.SetSelection(max(selection - 1, 0))
 
     def OnNameFormatHintClick(self, event):
-        wx.MessageBox(self.file_name_format_hint, 'File name format help',
+        wx.MessageBox(self.file_name_format_hint, _('File name format help'),
                       style=wx.ICON_NONE | wx.OK)
 
     def OnSize(self, event):

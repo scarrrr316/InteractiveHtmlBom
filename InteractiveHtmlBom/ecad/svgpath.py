@@ -195,7 +195,7 @@ class Arc(object):
                 rx_sqd = rx * rx
                 ry_sqd = ry * ry
             else:
-                raise ValueError("No such elliptic arc exists.")
+                raise ValueError(_("No such elliptic arc exists."))
 
         # Compute c'=(c_x', c_y'), the center of the ellipse in (x', y') coords
         # Noting that, in our new coord system, (x_2', y_2') = (-x_1', -x_2')
@@ -380,7 +380,7 @@ def parse_path(pathdef, logger, current_pos=0j):
             # and we don't change the command. Check that it's allowed:
             if command is None:
                 raise ValueError(
-                        "Unallowed implicit command in %s, position %s" % (
+                        _("Unallowed implicit command in %s, position %s") % (
                             pathdef, len(pathdef.split()) - len(elements)))
 
         if command == 'M':
@@ -436,9 +436,9 @@ def parse_path(pathdef, logger, current_pos=0j):
             current_pos = pos
 
         elif command == 'C':
-            logger.warn('Encountered Cubic Bezier segment. '
-                        'It is currently not supported and will be replaced '
-                        'by a line segment.')
+            logger.warn(_('Encountered Cubic Bezier segment. ')
+                        _('It is currently not supported and will be replaced ')
+                        _('by a line segment.'))
             for i in range(4):
                 # ignore control points
                 elements.pop()
@@ -448,12 +448,12 @@ def parse_path(pathdef, logger, current_pos=0j):
                 end += current_pos
 
             segments.append(Line(current_pos, end))
-            current_pos = end
+            current_pos = end_(
 
         elif command == 'S':
-            logger.warn('Encountered Quadratic Bezier segment. '
-                        'It is currently not supported and will be replaced '
-                        'by a line segment.')
+            logger.warn(_('Encountered Quadratic Bezier segment. ')
+                        _('It is currently not supported and will be replaced ')
+                        _('by a line segment.'))
             for i in range(2):
                 # ignore control points
                 elements.pop()
@@ -466,9 +466,9 @@ def parse_path(pathdef, logger, current_pos=0j):
             current_pos = end
 
         elif command == 'Q':
-            logger.warn('Encountered Quadratic Bezier segment. '
-                        'It is currently not supported and will be replaced '
-                        'by a line segment.')
+            logger.warn(_('Encountered Quadratic Bezier segment. ')
+                        _('It is currently not supported and will be replaced ')
+                        _('by a line segment.'))
             for i in range(2):
                 # ignore control points
                 elements.pop()
@@ -481,9 +481,9 @@ def parse_path(pathdef, logger, current_pos=0j):
             current_pos = end
 
         elif command == 'T':
-            logger.warn('Encountered Quadratic Bezier segment. '
-                        'It is currently not supported and will be replaced '
-                        'by a line segment.')
+            logger.warn(_('Encountered Quadratic Bezier segment. ')
+                        _('It is currently not supported and will be replaced ')
+                        _('by a line segment.'))
 
             end = float(elements.pop()) + float(elements.pop()) * 1j
 

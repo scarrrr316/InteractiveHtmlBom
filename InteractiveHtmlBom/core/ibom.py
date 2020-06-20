@@ -20,7 +20,7 @@ class Logger(object):
 
     def __init__(self, cli=False):
         self.cli = cli
-        self.logger = logging.getLogger('InteractiveHtmlBom')
+        self.logger = logging.getLogger(_('InteractiveHtmlBom'))
         self.logger.setLevel(logging.INFO)
         ch = logging.StreamHandler(sys.stdout)
         ch.setLevel(logging.INFO)
@@ -62,7 +62,7 @@ def skip_component(m, config, extra_data):
         return True
 
     # skip virtual components if needed
-    if config.blacklist_virtual and m.attr == 'Virtual':
+    if config.blacklist_virtual and m.attr == _('Virtual'):
         return True
 
     # skip components with dnp field not empty
@@ -132,7 +132,7 @@ def generate_bom(pcb_modules, config, extra_data):
                 # Some components are on pcb but not in schematic data.
                 # Show a warning about possibly outdated netlist/xml file.
                 log.warn(
-                        'Component %s is missing from schematic data.' % m.ref)
+                        _('Component %s is missing from schematic data.') % m.ref)
                 warning_shown = True
                 extras = [''] * len(config.extra_fields)
 
@@ -141,7 +141,7 @@ def generate_bom(pcb_modules, config, extra_data):
         valrefs[1].append((m.ref, i))
 
     if warning_shown:
-        log.warn('Netlist/xml file is likely out of date.')
+        log.warn(_('Netlist/xml file is likely out of date.'))
     # build bom table, sort refs
     bom_table = []
     for (norm_value, extras, footprint, attr), valrefs in part_groups.items():
@@ -193,7 +193,7 @@ def open_file(filename):
         elif sys.platform.startswith('linux'):
             subprocess.call(('xdg-open', filename))
     except OSError as oe:
-        log.warn('Failed to open browser: {}'.format(oe.message))
+        log.warn(_('Failed to open browser: {}').format(oe.message))
 
 
 def process_substitutions(bom_name_format, pcb_file_name, metadata):
@@ -240,9 +240,9 @@ def generate_file(pcb_file_dir, pcb_file_name, pcbdata, config):
     bom_file_dir = os.path.dirname(bom_file_name)
     if not os.path.isdir(bom_file_dir):
         os.makedirs(bom_file_dir)
-    log.info("Compressing pcb data")
+    log.info(_("Compressing pcb data"))
     compressed_pcbdata = get_compressed_pcbdata(pcbdata)
-    log.info("Dumping pcb data")
+    log.info(_("Dumping pcb data"))
     config_js = "var config = " + config.get_html_config()
     html = get_file_content("ibom.html")
     html = html.replace('///CSS///', get_file_content('ibom.css'))
@@ -285,8 +285,8 @@ def main(parser, config, logger):
                          config.dnp_field)
 
     if not config.netlist_file and need_extra_fields:
-        logger.warn('Ignoring extra fields related config parameters '
-                    'since no netlist/xml file was specified.')
+        logger.warn(_('Ignoring extra fields related config parameters ')
+                    _('since no netlist/xml file was specified.'))
         config.extra_fields = []
         config.board_variant_whitelist = []
         config.board_variant_blacklist = []
@@ -294,14 +294,14 @@ def main(parser, config, logger):
         need_extra_fields = False
 
     if extra_fields is None and need_extra_fields:
-        logger.error('Failed parsing %s' % config.netlist_file)
+        logger.error(_('Failed parsing %s') % config.netlist_file)
         return
 
     extra_fields = extra_fields[1] if extra_fields else None
 
     pcbdata, components = parser.parse()
     if not pcbdata or not components:
-        logger.error('Parsing failed.')
+        logger.error(_('Parsing failed.'))
         return
 
     pcbdata["bom"] = generate_bom(components, config, extra_fields)
@@ -311,7 +311,7 @@ def main(parser, config, logger):
     bom_file = generate_file(pcb_file_dir, pcb_file_name, pcbdata, config)
 
     if config.open_browser:
-        logger.info("Opening file in browser")
+        logger.info(_("Opening file in browser"))
         open_file(bom_file)
 
 
