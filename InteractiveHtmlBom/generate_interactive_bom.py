@@ -38,6 +38,8 @@ if method == 2:
 
 
 if __name__ == "__main__":
+    if '_' in GUI_Frame.__dict__:
+        GUI_Frame.__dict__.pop('_')
     # Add ../ to the path
     # Works if this script is executed without installing the module
     script_dir = os.path.dirname(os.path.abspath(__file__))
