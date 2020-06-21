@@ -12,7 +12,7 @@ from .. import dialog
 class Config:
     FILE_NAME_FORMAT_HINT = (
         _('Output file name format supports substitutions:\n')
-        _('\n')
+        '\n'
         _('    %f : original pcb file name without extension.\n')
         _('    %p : pcb/project title from pcb metadata.\n')
         _('    %c : company from pcb metadata.\n')
@@ -21,7 +21,7 @@ class Config:
         _('file modification date otherwise.\n')
         _('    %D : bom generation date.\n')
         _('    %T : bom generation time.\n')
-        _('\n')
+        '\n'
         _('Extension .html will be added automatically.')
     )  # type: str
 

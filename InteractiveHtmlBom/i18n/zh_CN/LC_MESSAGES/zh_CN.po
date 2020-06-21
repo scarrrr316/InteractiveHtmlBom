@@ -1,0 +1,332 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: htmlbom\n"
+"POT-Creation-Date: 2020-06-20 23:11+0800\n"
+"PO-Revision-Date: 2020-06-21 16:11+0800\n"
+"Language-Team: Z\n"
+"MIME-Version: 2.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"X-Generator: Poedit 2.3.1\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: zh\n"
+"X-Crowdin-Project: htmlbom\n"
+"X-Crowdin-Project-ID: 408348\n"
+"X-Crowdin-Language: zh-CN\n"
+"X-Crowdin-File: zh_CN.po\n"
+"X-Crowdin-File-ID: 2\n"
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\core\config.py:14
+msgid "Output file name format supports substitutions:\n"
+msgstr "输出文件名格式支持替换：\n"
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\core\config.py:16
+msgid "    %f : original pcb file name without extension.\n"
+msgstr "    %f : 原始的 pcb 文件名，无扩展名\n"
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\core\config.py:17
+msgid "    %p : pcb/project title from pcb metadata.\n"
+msgstr "    %p : 来自pcb 数据的 pcb/项目标题\n"
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\core\config.py:18
+msgid "    %c : company from pcb metadata.\n"
+msgstr "    %c : 来自pcb数据的公司名称\n"
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\core\config.py:19
+msgid "    %r : revision from pcb metadata.\n"
+msgstr "    %r : 来自 pcb 数据的版本\n"
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\core\config.py:20
+msgid "    %d : pcb date from metadata if available, "
+msgstr "    %d : 日期来自pcb 数据（如果可用） "
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\core\config.py:21
+msgid "file modification date otherwise.\n"
+msgstr "否则为文件的最后修改日期\n"
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\core\config.py:22
+msgid "    %D : bom generation date.\n"
+msgstr "    %D : bom生成日期\n"
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\core\config.py:23
+msgid "    %T : bom generation time.\n"
+msgstr "    %T : bom 生成时间\n"
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\core\config.py:25
+msgid "Extension .html will be added automatically."
+msgstr " .html 扩展名会被自动添加"
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\core\config.py:30
+msgid "bom-only"
+msgstr "只有bom"
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\core\config.py:30
+msgid "left-right"
+msgstr "左右"
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\core\config.py:30
+msgid "top-bottom"
+msgstr "上下"
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\core\config.py:31
+msgid "B"
+msgstr "背面"
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\core\config.py:31
+msgid "F"
+msgstr "正面"
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\core\config.py:31
+msgid "FB"
+msgstr "正背"
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\core\config.py:37
+msgid "Placed"
+msgstr "已放置"
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\core\config.py:37
+msgid "Sourced"
+msgstr "已经采购"
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\core\ibom.py:23
+msgid "InteractiveHtmlBom"
+msgstr "交互式HtmlBom"
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\core\ibom.py:65
+msgid "Virtual"
+msgstr "虚拟"
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\core\ibom.py:135
+msgid "Component %s is missing from schematic data."
+msgstr "组件 %s 在原理图数据中缺失"
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\core\ibom.py:144
+msgid "Netlist/xml file is likely out of date."
+msgstr "Netlist/xml 文件可能已经过时"
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\core\ibom.py:196
+msgid "Failed to open browser: {}"
+msgstr "打开浏览器失败:{}"
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\core\ibom.py:243
+msgid "Compressing pcb data"
+msgstr "压缩pcb 数据"
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\core\ibom.py:245
+msgid "Dumping pcb data"
+msgstr "转储pcb 数据"
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\core\ibom.py:288
+msgid "Ignoring extra fields related config parameters "
+msgstr "忽略额外字段相关的配置参数 "
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\core\ibom.py:289
+msgid "since no netlist/xml file was specified."
+msgstr "因为没有指定netlist/xml 文件。"
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\core\ibom.py:297
+msgid "Failed parsing %s"
+msgstr "解析 %s 失败"
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\core\ibom.py:304
+msgid "Parsing failed."
+msgstr "解析失败"
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\core\ibom.py:314
+msgid "Opening file in browser"
+msgstr "在浏览器中打开文件"
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\dialog\settings_dialog.py:11
+msgid "Error"
+msgstr "错误"
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\dialog\settings_dialog.py:24
+msgid "InteractiveHtmlBom %s"
+msgstr "交互式HtmlBom %s"
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\dialog\settings_dialog.py:51
+msgid "General"
+msgstr "一般"
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\dialog\settings_dialog.py:52
+msgid "Html defaults"
+msgstr "Html 默认值"
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\dialog\settings_dialog.py:53
+msgid "Extra fields"
+msgstr "额外字段"
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\dialog\settings_dialog.py:106
+msgid "Characters except for A-Z will be ignored."
+msgstr "除了A-Z之外，字符将被忽略"
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\dialog\settings_dialog.py:107
+msgid "Add sort order item"
+msgstr "添加排序顺序项目"
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\dialog\settings_dialog.py:124
+msgid "You can not delete '~' item"
+msgstr "您不能删除 '~' 项"
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\dialog\settings_dialog.py:132
+msgid "Characters except for A-Z 0-9 and * will be ignored."
+msgstr "除了A-Z，0-9和 * 之外的字符将被忽略"
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\dialog\settings_dialog.py:133
+msgid "Add blacklist item"
+msgstr "添加黑名单项目"
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\dialog\settings_dialog.py:153
+msgid "File name format help"
+msgstr "文件名格式帮助"
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\dialog_test.py:7
+msgid "Should generate bom"
+msgstr "应该生成bom"
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\dialog_test.py:15
+msgid "Done"
+msgstr "已完成"
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\ecad\easyeda.py:43
+msgid "No head attribute."
+msgstr "无头部属性"
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\ecad\easyeda.py:47
+msgid "Incorrect head attribute "
+msgstr "头属性不正确 "
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\ecad\easyeda.py:50
+msgid "Incorrect document type: "
+msgstr "文档类型不正确： "
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\ecad\easyeda.py:53
+msgid "No canvas attribute."
+msgstr "无画布属性"
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\ecad\easyeda.py:57
+msgid "Incorrect canvas attribute "
+msgstr "画布属性不正确 "
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\ecad\easyeda.py:59
+msgid "EasyEDA editor version "
+msgstr "EasyEDA 编辑器版本 "
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\ecad\kicad.py:51
+msgid "Unsupported shape %s, skipping"
+msgstr "不受支持形状 %s，跳过"
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\ecad\kicad.py:87
+msgid "Polygons not supported for KiCad 4, skipping"
+msgstr "KiCad 4 不支持多边形,  跳过"
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\ecad\kicad.py:113
+msgid "No PointCount method on outline object. "
+msgstr "在轮廓对象上没有点数方式 "
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\ecad\kicad.py:114
+msgid "Unpatched kicad version?"
+msgstr "未修复的 kicad 版本？"
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\ecad\kicad.py:269
+msgid "Detected holes in custom pad polygons"
+msgstr "在自定义焊盘中检测到孔"
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\ecad\kicad.py:272
+msgid "Detected self intersecting polygons in custom pad"
+msgstr "检测到自定义焊盘上有自相交多边形"
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\ecad\kicad.py:455
+msgid "Please draw pcb outline on the edges "
+msgstr "请在pcb 边缘绘制轮廓 "
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\ecad\kicad.py:456
+msgid "layer on sheet or any module before "
+msgstr "图纸上或任何模块之前的图层 "
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\ecad\kicad.py:457
+msgid "generating BOM."
+msgstr "正在生成 BOM"
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\ecad\kicad.py:491
+msgid "Zones not supported for KiCad 4, skipping"
+msgstr "KiCad 4不支持区域，跳过"
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\ecad\kicad.py:504
+msgid "Generate Interactive HTML BOM"
+msgstr "生成交互式HTML BOM"
+
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\ecad\kicad.py:510
+msgid "Generate interactive HTML page that contains BOM "
+msgstr "生成包含 BOM 的交互式 HTML 页面 "
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\ecad\kicad.py:511
+msgid "table and pcb drawing."
+msgstr "表格和 pcb 绘制"
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\ecad\kicad.py:525
+msgid "Please save the board file before generating BOM."
+msgstr "请在生成 BOM 之前保存PCB板文件"
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\ecad\svgpath.py:198
+msgid "No such elliptic arc exists."
+msgstr "不存在这种椭圆弧"
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\ecad\svgpath.py:383
+msgid "Unallowed implicit command in %s, position %s"
+msgstr "%s中不允许隐含命令，位置 %s"
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\ecad\svgpath.py:439
+msgid "Encountered Cubic Bezier segment. "
+msgstr "遇到立方贝塞尔线段 "
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\ecad\svgpath.py:440
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\ecad\svgpath.py:455
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\ecad\svgpath.py:470
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\ecad\svgpath.py:485
+msgid "It is currently not supported and will be replaced "
+msgstr "目前不支持，它将会被替换 "
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\ecad\svgpath.py:441
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\ecad\svgpath.py:456
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\ecad\svgpath.py:471
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\ecad\svgpath.py:486
+msgid "by a line segment."
+msgstr "按线段排列"
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\ecad\svgpath.py:454
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\ecad\svgpath.py:469
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\ecad\svgpath.py:484
+msgid "Encountered Quadratic Bezier segment. "
+msgstr "遇到二次贝塞尔线段 "
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\generate_interactive_bom.py:61
+msgid "KiCad InteractiveHtmlBom plugin CLI."
+msgstr "KiCad 交互式HtmlBom 命令行插件"
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\generate_interactive_bom.py:65
+msgid "KiCad PCB file"
+msgstr "KiCad PCB 文件"
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\generate_interactive_bom.py:70
+msgid "File %s does not exist."
+msgstr "文件 %s 不存在"
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\generate_interactive_bom.py:72
+msgid "Loading %s"
+msgstr "正在加载 %s"
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\generate_interactive_bom.py:77
+msgid "Can not show dialog when INTERACTIVE_HTML_BOM_NO_DISPLAY is set."
+msgstr "启用INTERACTIVE_HTML_BOM_NO_DISPLAY 时无法显示对话框"
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\version.py:16
+msgid "Git version check failed: "
+msgstr "Git 版本检查失败： "
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\version.py:18
+msgid "Git process cannot be launched: "
+msgstr "Git 进程无法启动： "

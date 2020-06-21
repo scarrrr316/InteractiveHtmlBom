@@ -1,0 +1,366 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2020-06-20 23:11+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=cp936\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\core\config.py:14
+msgid ""
+"Output file name format supports substitutions:\n"
+msgstr ""
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\core\config.py:16
+msgid ""
+"    %f : original pcb file name without extension.\n"
+msgstr ""
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\core\config.py:17
+msgid ""
+"    %p : pcb/project title from pcb metadata.\n"
+msgstr ""
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\core\config.py:18
+msgid ""
+"    %c : company from pcb metadata.\n"
+msgstr ""
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\core\config.py:19
+msgid ""
+"    %r : revision from pcb metadata.\n"
+msgstr ""
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\core\config.py:20
+msgid "    %d : pcb date from metadata if available, "
+msgstr ""
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\core\config.py:21
+msgid ""
+"file modification date otherwise.\n"
+msgstr ""
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\core\config.py:22
+msgid ""
+"    %D : bom generation date.\n"
+msgstr ""
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\core\config.py:23
+msgid ""
+"    %T : bom generation time.\n"
+msgstr ""
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\core\config.py:25
+msgid "Extension .html will be added automatically."
+msgstr ""
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\core\config.py:30
+msgid "bom-only"
+msgstr ""
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\core\config.py:30
+msgid "left-right"
+msgstr ""
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\core\config.py:30
+msgid "top-bottom"
+msgstr ""
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\core\config.py:31
+msgid "B"
+msgstr ""
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\core\config.py:31
+msgid "F"
+msgstr ""
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\core\config.py:31
+msgid "FB"
+msgstr ""
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\core\config.py:37
+msgid "Placed"
+msgstr ""
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\core\config.py:37
+msgid "Sourced"
+msgstr ""
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\core\ibom.py:23
+msgid "InteractiveHtmlBom"
+msgstr ""
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\core\ibom.py:65
+msgid "Virtual"
+msgstr ""
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\core\ibom.py:135
+msgid "Component %s is missing from schematic data."
+msgstr ""
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\core\ibom.py:144
+msgid "Netlist/xml file is likely out of date."
+msgstr ""
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\core\ibom.py:196
+msgid "Failed to open browser: {}"
+msgstr ""
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\core\ibom.py:243
+msgid "Compressing pcb data"
+msgstr ""
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\core\ibom.py:245
+msgid "Dumping pcb data"
+msgstr ""
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\core\ibom.py:288
+msgid "Ignoring extra fields related config parameters "
+msgstr ""
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\core\ibom.py:289
+msgid "since no netlist/xml file was specified."
+msgstr ""
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\core\ibom.py:297
+msgid "Failed parsing %s"
+msgstr ""
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\core\ibom.py:304
+msgid "Parsing failed."
+msgstr ""
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\core\ibom.py:314
+msgid "Opening file in browser"
+msgstr ""
+
+#:
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\dialog\settings_dialog.py:11
+msgid "Error"
+msgstr ""
+
+#:
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\dialog\settings_dialog.py:24
+msgid "InteractiveHtmlBom %s"
+msgstr ""
+
+#:
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\dialog\settings_dialog.py:51
+msgid "General"
+msgstr ""
+
+#:
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\dialog\settings_dialog.py:52
+msgid "Html defaults"
+msgstr ""
+
+#:
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\dialog\settings_dialog.py:53
+msgid "Extra fields"
+msgstr ""
+
+#:
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\dialog\settings_dialog.py:106
+msgid "Characters except for A-Z will be ignored."
+msgstr ""
+
+#:
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\dialog\settings_dialog.py:107
+msgid "Add sort order item"
+msgstr ""
+
+#:
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\dialog\settings_dialog.py:124
+msgid "You can not delete '~' item"
+msgstr ""
+
+#:
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\dialog\settings_dialog.py:132
+msgid "Characters except for A-Z 0-9 and * will be ignored."
+msgstr ""
+
+#:
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\dialog\settings_dialog.py:133
+msgid "Add blacklist item"
+msgstr ""
+
+#:
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\dialog\settings_dialog.py:153
+msgid "File name format help"
+msgstr ""
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\dialog_test.py:7
+msgid "Should generate bom"
+msgstr ""
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\dialog_test.py:15
+msgid "Done"
+msgstr ""
+
+#:
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\ecad\easyeda.py:43
+msgid "No head attribute."
+msgstr ""
+
+#:
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\ecad\easyeda.py:47
+msgid "Incorrect head attribute "
+msgstr ""
+
+#:
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\ecad\easyeda.py:50
+msgid "Incorrect document type: "
+msgstr ""
+
+#:
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\ecad\easyeda.py:53
+msgid "No canvas attribute."
+msgstr ""
+
+#:
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\ecad\easyeda.py:57
+msgid "Incorrect canvas attribute "
+msgstr ""
+
+#:
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\ecad\easyeda.py:59
+msgid "EasyEDA editor version "
+msgstr ""
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\ecad\kicad.py:51
+msgid "Unsupported shape %s, skipping"
+msgstr ""
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\ecad\kicad.py:87
+msgid "Polygons not supported for KiCad 4, skipping"
+msgstr ""
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\ecad\kicad.py:113
+msgid "No PointCount method on outline object. "
+msgstr ""
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\ecad\kicad.py:114
+msgid "Unpatched kicad version?"
+msgstr ""
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\ecad\kicad.py:269
+msgid "Detected holes in custom pad polygons"
+msgstr ""
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\ecad\kicad.py:272
+msgid "Detected self intersecting polygons in custom pad"
+msgstr ""
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\ecad\kicad.py:455
+msgid "Please draw pcb outline on the edges "
+msgstr ""
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\ecad\kicad.py:456
+msgid "layer on sheet or any module before "
+msgstr ""
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\ecad\kicad.py:457
+msgid "generating BOM."
+msgstr ""
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\ecad\kicad.py:491
+msgid "Zones not supported for KiCad 4, skipping"
+msgstr ""
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\ecad\kicad.py:504
+msgid "Generate Interactive HTML BOM"
+msgstr ""
+
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\ecad\kicad.py:510
+msgid "Generate interactive HTML page that contains BOM "
+msgstr ""
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\ecad\kicad.py:511
+msgid "table and pcb drawing."
+msgstr ""
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\ecad\kicad.py:525
+msgid "Please save the board file before generating BOM."
+msgstr ""
+
+#:
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\ecad\svgpath.py:198
+msgid "No such elliptic arc exists."
+msgstr ""
+
+#:
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\ecad\svgpath.py:383
+msgid "Unallowed implicit command in %s, position %s"
+msgstr ""
+
+#:
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\ecad\svgpath.py:439
+msgid "Encountered Cubic Bezier segment. "
+msgstr ""
+
+#:
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\ecad\svgpath.py:440
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\ecad\svgpath.py:455
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\ecad\svgpath.py:470
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\ecad\svgpath.py:485
+msgid "It is currently not supported and will be replaced "
+msgstr ""
+
+#:
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\ecad\svgpath.py:441
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\ecad\svgpath.py:456
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\ecad\svgpath.py:471
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\ecad\svgpath.py:486
+msgid "by a line segment."
+msgstr ""
+
+#:
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\ecad\svgpath.py:454
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\ecad\svgpath.py:469
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\ecad\svgpath.py:484
+msgid "Encountered Quadratic Bezier segment. "
+msgstr ""
+
+#:
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\generate_interactive_bom.py:61
+msgid "KiCad InteractiveHtmlBom plugin CLI."
+msgstr ""
+
+#:
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\generate_interactive_bom.py:65
+msgid "KiCad PCB file"
+msgstr ""
+
+#:
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\generate_interactive_bom.py:70
+msgid "File %s does not exist."
+msgstr ""
+
+#:
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\generate_interactive_bom.py:72
+msgid "Loading %s"
+msgstr ""
+
+#:
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\generate_interactive_bom.py:77
+msgid "Can not show dialog when INTERACTIVE_HTML_BOM_NO_DISPLAY is set."
+msgstr ""
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\version.py:16
+msgid "Git version check failed: "
+msgstr ""
+
+#: D:\Documents\GitHub\InteractiveHtmlBom\InteractiveHtmlBom\version.py:18
+msgid "Git process cannot be launched: "
+msgstr ""
+

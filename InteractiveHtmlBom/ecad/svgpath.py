@@ -448,7 +448,7 @@ def parse_path(pathdef, logger, current_pos=0j):
                 end += current_pos
 
             segments.append(Line(current_pos, end))
-            current_pos = end_(
+            current_pos = end
 
         elif command == 'S':
             logger.warn(_('Encountered Quadratic Bezier segment. ')
